@@ -1,0 +1,24 @@
+section.main-footer
+        .main-footer__row
+            .main-footer__menu
+                nav.menu
+                    ul.menu__list
+                        -
+                            var menulink = [
+                                ['Мои работы', 'my-works.html'],
+                                ['Обо мне', 'about.html'],
+                                ['Блог', 'blog.html'],
+                                ['Авторизация', 'index.html']
+                            ]
+                        each item in menulink
+                            li.menu__item
+                                a(href=`${item[1]}`).menu__link #{item[0]}
+            .main-footer__socials
+                ul.socials.socials_rounded
+                    each item in ['vk','git','in']
+                        li.socials__item
+                            a(href="" class=`socials__item_${item}`).social
+        .main-footer__row
+            .main-footer__text
+                p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+            .main-footer-copyright= copy

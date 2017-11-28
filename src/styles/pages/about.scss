@@ -1,0 +1,272 @@
+.section-about {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .section-about__left {
+        width: 50%;
+        background: #efeee9;
+    }
+    .section-about__right {
+        width: 50%;
+        background: #eeebdf;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.section-about__left-title {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    font-size: 63px;
+    .section-about__left-title_img-bg {
+        position: absolute;
+        width: 340px;
+        height: 120px;
+        top: 0;
+        left: 50%;
+        margin-left: -170px;
+        margin-top: -35px;
+        background-image: url("../images/about_header.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.2;
+    }
+}
+
+.section-about__left-content {
+    .user-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .user-description__image{
+            width: 445px;
+            height: 445px;
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+        .user-desciption__title {
+            width: 445px;
+            font-size: 35px;
+            margin-bottom: 40px;
+        }
+        .user-description__text {
+            width: 445px;
+        }
+    }
+}
+
+.block-title,
+.block-subtitle {
+    font-family: "BERNIER Regular", sans-serif;
+    text-align: center;
+} 
+
+
+.section-about__right-title {
+    font-size: 35px;
+    margin-bottom: 40px;
+    width: 220px;
+    align-self: center;
+}
+
+.section-about__right-description {
+    padding-left: 40px;
+    margin-bottom: 50px;
+}
+
+.section-about__right-content  {
+    padding-left: 40px;
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .skills-row__title {
+        font-size: 28px;
+    }
+    .skills-row__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+    .skill {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 110px;
+        height: 110px;
+        position: relative;
+        margin-right: 35px;
+        margin-top: 20px;
+        svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .skills-row__item:last-of-type .skill {
+        margin-right: 0;
+    }
+    .skill__title {
+        color: #1bb696;
+        font-size: 14px;
+        width: 70px;
+        text-align: center;
+    }
+}
+
+.circles {
+    fill: none;
+    stroke-width: 20;
+    .circle__first {
+        stroke: #dfdcd5;
+    }
+    .circle__second {
+        stroke: #1bb696;
+        stroke-dasharray: .0010 282.6;
+        transition: all 1s;
+    }
+}
+
+.circles:hover .circle-0 {
+    stroke-dasharray: .001 282.6;
+ }
+ .circles:hover .circle-10 {
+    stroke-dasharray: 28.26 282.6;
+ }
+ .circles:hover .circle-15 {
+    stroke-dasharray: 42.39 282.6;
+ }
+ .circles:hover .circle-20 {
+    stroke-dasharray: 56.52 282.6;
+ }
+ .circles:hover .circle-25 {
+    stroke-dasharray: 70.65 282.6;
+ }
+ .circles:hover .circle-30 {
+    stroke-dasharray: 84.78 282.6;
+ }
+ .circles:hover .circle-35 {
+    stroke-dasharray: 98.91 282.6;
+ }
+ .circles .circle-40 {
+    stroke-dasharray: 113.04 282.6;
+ }
+ .circles:hover .circle-45 {
+    stroke-dasharray: 127.17 282.6;
+ }
+ .circles .circle-50 {
+    stroke-dasharray: 141.3 282.6;
+ }
+ .circles:hover .circle-55 {
+    stroke-dasharray: 155.43 282.6;
+ }
+ .circles .circle-60 {
+    stroke-dasharray: 169.56 282.6;
+ }
+ .circles:hover .circle-65 {
+    stroke-dasharray: 183.69 282.6;
+ }
+ .circles:hover .circle-70 {
+    stroke-dasharray: 197.82 282.6;
+ }
+ .circles:hover .circle-75 {
+    stroke-dasharray: 211.95 282.6;
+ }
+ .circles:hover .circle-80 {
+    stroke-dasharray: 226.08 282.6;
+ }
+ .circles:hover .circle-85 {
+    stroke-dasharray: 240.21 282.6;
+ }
+ .circles:hover .circle-90 {
+    stroke-dasharray: 254.34 282.6;
+ }
+ .circles:hover .circle-95 {
+    stroke-dasharray: 268.47 282.6;
+ }
+ .circles:hover .circle-100 {
+    stroke-dasharray: 282.6 282.6;
+ }
+
+.map {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../images/google-map.png");
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .map__data {
+        width: 380px;
+        height: 290px;
+        background: rgba(255,255,255, 0.9);
+        border-radius: 5px;
+    }
+}
+
+.contacts{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 30px;
+    .contacts__title {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+    .contacts__pin {
+        position: absolute;
+        width: 25px;
+        height: 36px;
+        top: 70px;
+        right: -230px;
+        background: url("../images/map_marker.svg") no-repeat;
+        background-size: cover;
+    }
+    .contacts__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .contacts__item {
+        margin-bottom: 20px;
+    }
+    .contacts-row__item{
+        display: flex;
+        align-items: center;
+    }
+    .contacts-row__content {
+        color: #455a64;
+        font-size: 16px;
+        font-weight: 700;
+        opacity: 0.8;
+    }
+    i{
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+    }
+    .contacts-row__icon_skype {
+        background: url("../images/skype.svg") no-repeat center;
+    }
+    .contacts-row__icon_mail {
+        background: url("../images/envelope.svg") no-repeat center;
+    }
+    .contacts-row__icon_phone {
+        background: url("../images/phone.svg") no-repeat center;
+    }
+    .contacts-row__icon_map {
+        background: url("../images/map_marker.svg") no-repeat center;
+    }
+}
