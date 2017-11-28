@@ -1,9 +1,13 @@
-ul.menu
-    li
-        a(href="index.html") Главная
-    li
-        a(href="about.html") Обо мне
-    li
-        a(href="my-works.html") Мои работы
-    li
-        a(href="blog.html") Блог
+#hamburger__menu
+    div(onclick="document.getElementById('hamburger__menu').style.display='none'" class="hamburger-close")
+    ul.menu__list
+        -
+            var menulink = [
+                ['Мои работы', 'my-works.html'],
+                ['Обо мне', 'about.html'],
+                ['Блог', 'blog.html'],
+                ['Авторизация', 'index.html']
+            ]
+        each item in menulink
+            li.menu__item
+                a(href=`${item[1]}`).menu__link #{item[0]}

@@ -21,12 +21,12 @@ const paths = {
         dest: 'build/assets/'
     },
     styles: {
-        src: 'src/templates/**/*.scss',
+        src: 'src/styles/**/*.scss',
         dest: 'build/assets/styles/'
     },
     images: {
-        src: 'src/iamges/**/*.*',
-        dest: 'build/assets/iamges/'
+        src: 'src/images/**/*.*',
+        dest: 'build/assets/images/'
     },
     scripts: {
         src: 'src/scripts/**/*.js',
