@@ -8,10 +8,10 @@ block content
         .index-header_container
             .index-header__user
                 .user__pic
-                    img.user__img(src="/assets/images/avatar.png", alt="")
+                    img.user__img(src=avatar_img, alt="")
                 .user__description
-                    .user__name Гильфанов Ильнур
-                    .user__info Личный сайт разработчика
+                    .user__name= userName
+                    .user__info= userInfo
             .index-header__socials
                 ul.socials.socials_green_color
                     each item in ['vk','git','in']

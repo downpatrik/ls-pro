@@ -14,13 +14,13 @@ block content
             .hamburger(onclick="document.getElementById('hamburger__menu').style.display='block'")
         .main-header__title
             .section-title
-                img.section-title__pic(src="/assets/images/portfolio_header.svg", alt="Портфолио")
+                img.section-title__pic(src=header_img, alt="Портфолио")
         .main-header__user
             .user__pic
-                img.user__img(src="/assets/images/avatar.png", alt="")
+                img.user__img(src=avatar_img, alt="")
             .user__description
-                .user__name Гильфанов Ильнур
-                .user__info Личный сайт разработчика
+                .user__name= userName
+                .user__info= userInfo
         .main-header__scroll-btn
             button(type="button").arrow-down
         .main-header__triangle.work-header_triangle
