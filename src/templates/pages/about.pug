@@ -4,7 +4,7 @@ block variables
     - var  title = 'Обо мне'
 
 block content
-    section.main-header
+    section.main-header.about-header_hight
         .main-header__socials
             ul.socials
                 each item in ['vk','git','in']
@@ -23,7 +23,7 @@ block content
                 .user__info Личный сайт разработчика
         .main-header__scroll-btn
             button(type="button").arrow-down
-        .main-header__triangle
+        .main-header__triangle.about-header_triangle
             svg.triangle(viewbox="0 0 1000 85", version="1.1", xmlns="http://www.w3.org/2000/svg", xmlns:xlink="http://www.w3.org/1999/xlink")
                 polygon.triangle_left_white(points="0,0   0,86   500.8,86   500.8,75")
                 polygon.triangle_right_beige(points="1000,0   1000,86   500,86   500,75")
@@ -37,13 +37,13 @@ block content
                     .user-description__image
                         img.user-description__img(src="/assets/images/avatar.png", alt="")
                     .user-desciption__title
-                        .block-subtitle Кто я
+                        .block-title Кто я
                     .user-description__text
                         p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
                         p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
         .section-about__right
             .section-about__right-title
-                .block-subtitle Чем я могу быть вам поелезен
+                .block-title Чем я могу быть вам поелезен
             .section-about__right-description
                 p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
             .section-about__right-content
@@ -85,7 +85,7 @@ block content
         .map__data              
             .contacts
                 .contacts__title
-                    .block-subtitle Контакты
+                    .block-title Контакты
                 ul.contacts__list
                     -
                         var contacts = [

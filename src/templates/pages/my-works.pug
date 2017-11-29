@@ -4,4 +4,36 @@ block variables
     - var  title = 'Мои работы'
 
 block content
-    h1 Мои работы
+    section.main-header.work-header_hight
+        .main-header__socials
+            ul.socials
+                each item in ['vk','git','in']
+                    li.socials__item
+                        a(href="#" class=`socials__item_${item}`)
+        .main-header__menu
+            .hamburger(onclick="document.getElementById('hamburger__menu').style.display='block'")
+        .main-header__title
+            .section-title
+                img.section-title__pic(src="/assets/images/portfolio_header.svg", alt="Портфолио")
+        .main-header__user
+            .user__pic
+                img.user__img(src="/assets/images/avatar.png", alt="")
+            .user__description
+                .user__name Гильфанов Ильнур
+                .user__info Личный сайт разработчика
+        .main-header__scroll-btn
+            button(type="button").arrow-down
+        .main-header__triangle.work-header_triangle
+            svg.triangle(viewbox="0 0 1000 85", version="1.1", xmlns="http://www.w3.org/2000/svg", xmlns:xlink="http://www.w3.org/1999/xlink")
+                polygon.triangle_left_white(points="0,0   0,86   500.8,86   500.8,75")
+                polygon.triangle_right_beige(points="1000,0   1000,86   500,86   500,75")
+    section.section-work
+        .section-work__left
+        .section-work__right
+    section.
+        .
+        .
+        .
+
+    include ../common/footer.pug
+    include ../common/menu.pug

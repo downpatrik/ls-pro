@@ -4,10 +4,37 @@ block variables
     - var  title = 'Добро пожаловать'
 
 block content
-    h1 Главная
-    form(action="")
-        lavel(for="email") email
-        input(name="email" id="email")
-        label(for="password")
-        input(name="password" id="password")
-        button Войти 
+    section.main-header.index-header_hight
+        .index-header_container
+            .index-header__user
+                .user__pic
+                    img.user__img(src="/assets/images/avatar.png", alt="")
+                .user__description
+                    .user__name Гильфанов Ильнур
+                    .user__info Личный сайт разработчика
+            .index-header__socials
+                ul.socials.socials_green_color
+                    each item in ['vk','git','in']
+                        li.socials__item
+                            a(href="#" class=`socials__item_${item}`)
+            .index-header__menu
+                ul.menu__list
+                        -
+                            var menulink = [
+                                ['Мои работы', 'my-works.html'],
+                                ['Обо мне', 'about.html'],
+                                ['Блог', 'blog.html']
+                            ]
+                        each item in menulink
+                            li.menu__item
+                                a(href=`${item[1]}`).menu__link #{item[0]}
+        .index-header__authorization-btn
+            button(type="button").authorization_btn Авторизоваться
+        .index-footer__copyright-text= copy
+        .index-header__container-authorization
+            form(action="")
+                lavel(for="email") email
+                input(name="email" id="email")
+                label(for="password")
+                input(name="password" id="password")
+                button Войти

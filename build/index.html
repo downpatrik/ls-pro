@@ -7,16 +7,46 @@
     <meta content="" name="keywords">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <mate content="ie=edge" http-equiv="x-ua-compatible"></mate>
-    <link rel="stylesheet" href="/build/assets/styles/app.min.css">
+    <link rel="stylesheet" href="/assets/styles/app.min.css">
   </head>
   <body>
-    <h1>Главная</h1>
-    <form action="">
-      <lavel for="email">email</lavel>
-      <input name="email" id="email">
-      <label for="password"></label>
-      <input name="password" id="password">
-      <button>Войти </button>
-    </form>
+    <section class="main-header index-header_hight">
+      <div class="index-header_container">
+        <div class="index-header__user">
+          <div class="user__pic"><img class="user__img" src="/assets/images/avatar.png" alt=""></div>
+          <div class="user__description">
+            <div class="user__name">Гильфанов Ильнур</div>
+            <div class="user__info">Личный сайт разработчика</div>
+          </div>
+        </div>
+        <div class="index-header__socials">
+          <ul class="socials socials_green_color">
+            <li class="socials__item"><a class="socials__item_vk" href="#"></a></li>
+            <li class="socials__item"><a class="socials__item_git" href="#"></a></li>
+            <li class="socials__item"><a class="socials__item_in" href="#"></a></li>
+          </ul>
+        </div>
+        <div class="index-header__menu">
+          <ul class="menu__list">
+            <li class="menu__item"><a class="menu__link" href="my-works.html">Мои работы</a></li>
+            <li class="menu__item"><a class="menu__link" href="about.html">Обо мне</a></li>
+            <li class="menu__item"><a class="menu__link" href="blog.html">Блог</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="index-header__authorization-btn">
+        <button class="authorization_btn" type="button">Авторизоваться</button>
+      </div>
+      <div class="index-footer__copyright-text">© Гильфанов Ильнур | создано с любовью в Yandex | 2017</div>
+      <div class="index-header__container-authorization">
+        <form action="">
+          <lavel for="email">email</lavel>
+          <input name="email" id="email">
+          <label for="password"></label>
+          <input name="password" id="password">
+          <button>Войти</button>
+        </form>
+      </div>
+    </section>
   </body>
 </html>

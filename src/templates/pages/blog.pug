@@ -4,102 +4,51 @@ block variables
     - var  title = 'Блог'
 
 block content
-    section.main-header
+    section.main-header.blog-header_hight
         .main-header__socials
             ul.socials
                 each item in ['vk','git','in']
                     li.socials__item
                         a(href="#" class=`socials__item_${item}`)
         .main-header__menu
-            .hamburger
-        .main-header__title
+            .hamburger(onclick="document.getElementById('hamburger__menu').style.display='block'")
+        .main-header__title.blog-header_title
             .section-title
-                img.section-title__pic(src="/assets/images/portfolio_header.svg", alt="Портфолио")
+                img.section-title__pic(src="/assets/images/blog_header.svg", alt="Портфолио")
         .main-header__user
             .user__pic
                 img.user__img(src="/assets/images/avatar.png", alt="")
             .user__description
-                .user__name Гильфанов Ильнур
-                .user__info Личный сайт разработчика
-        .main-header__scroll-btn
+                .block-subtitle БЛОГ
+                .user__info Статьи которые я написал
+        .main-header__scroll-btn.blog-header_btn
             button(type="button").arrow-down
-        .main-header__triangle
+        .main-header__triangle.blog-header_triangle
             svg.triangle(viewbox="0 0 1000 85", version="1.1", xmlns="http://www.w3.org/2000/svg", xmlns:xlink="http://www.w3.org/1999/xlink")
                 polygon.triangle_left_white(points="0,0   0,86   500.8,86   500.8,75")
                 polygon.triangle_right_beige(points="1000,0   1000,86   500,86   500,75")
-    section.section-about
-        .section-about__left
-            .section-about__left-title
-                .block-title Обо мне
-                .section-about__left-title_img-bg
-            .section-about__left-content
-                .user-description
-                    .user-description__image
-                        img.user-description__img(src="/assets/images/avatar.png", alt="")
-                    .user-desciption__title
-                        .block-subtitle Кто я
-                    .user-description__text
-                        p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
-                        p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
-        .section-about__right
-            .section-about__right-title
-                .block-subtitle Чем я могу быть вам поелезен
-            .section-about__right-description
-                p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
-            .section-about__right-content
-                ul.skills-list
-                    li.slikks-list__item
-                            .skills-row
-                                .skills-row__title Frontend
-                                ul.skills-row__list
-                                    each skil in ['HTML5', 'CSS3', 'Javascript & jQery']
-                                        li.skills-row__item
-                                            .skill
-                                                svg.circles(viewbox='0 0 110 110')
-                                                    circle.circle__first(r='45', cx='50%', cy='50%', fill='none')
-                                                    circle.circle__second.circle-40(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
-                                                .skill__title= skil
-                    li.slikks-list__item
-                            .skills-row
-                                .skills-row__title Backend
-                                ul.skills-row__list
-                                    each skil in ['PHP', 'MYSQL', 'Node.js & npm', 'Mongo.db']
-                                        li.skills-row__item
-                                            .skill
-                                                svg.circles(viewbox='0 0 110 110')
-                                                    circle.circle__first(r='45', cx='50%', cy='50%', fill='none')
-                                                    circle.circle__second.circle-50(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
-                                                .skill__title= skil
-                    li.slikks-list__item
-                            .skills-row
-                                .skills-row__title Workflow
-                                ul.skills-row__list
-                                    each skil in ['Git', 'Gulp', 'Bower']
-                                        li.skills-row__item
-                                            .skill
-                                                svg.circles(viewbox='0 0 110 110')
-                                                    circle.circle__first(r='45', cx='50%', cy='50%', fill='none')
-                                                    circle.circle__second.circle-60(r='45', cx='50%', cy='50%', transform='rotate(-90 55 55)')
-                                                .skill__title= skil
-    section.map
-        .map__data              
-            .contacts
-                .contacts__title
-                    .block-subtitle Контакты
-                ul.contacts__list
-                    -
-                        var contacts = [
-                            ['skype', 'skype_kdn'],
-                            ['mail', 'astahov@mail.ru'],
-                            ['phone', '+7 123 456 78 90'],
-                            ['map', 'г. Москва, Оружейный пер., д. 15А']
-                        ]           
-                    each item in contacts 
-                        li.contacts__item
-                            .contacts-row__item
-                                i(class=`contacts-row__icon_${item[0]}`)
-                                .contacts-row__content #{item[1]}
-                .contacts__pin
+    section.section-blog
+        .section-blog__left
+            .section-blog__left-articles
+                ul.articles-list
+                    li.article-name.active Самое важное в SASS
+                    li.article-name Приемы в верстке, без которых не обхолится не один сайт
+                    li.article-name Самый необходимый набор Gulp плагинов
+                    li.article-name Почему я выбрал Jade
+        .section-blog__right
+            .section-blog__right-article
+                .article-header Самое важое в SASS
+                .article-date 22 november 2016
+                .article-text Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Собрал буквоград эта рекламных моей текст вопрос своего сих рот коварных свою большого семь, точках пояс образ использовало агентство! Имени ему дороге использовало курсивных которой мир рыбного страну о продолжил алфавит прямо подпоясал, несколько lorem пустился, взобравшись пор. Свой маленький вскоре вдали текстами диких продолжил себя приставка строчка буквоград путь, вершину заголовок своих раз там это взобравшись пунктуация мир щеке великий все? По всей, над. Дороге, он? Заманивший пояс дорогу вопроса курсивных, ему но взгляд продолжил себя!
+                .article-text Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Собрал буквоград эта рекламных моей текст вопрос своего сих рот коварных свою большого семь, последний парадигматическая снова языкового продолжил, напоивший не по всей возвращайся, точках пояс образ использовало агентство! Имени ему дороге использовало курсивных которой мир рыбного страну о продолжил алфавит прямо подпоясал, предупредила переписывается меня реторический наш, несколько lorem пустился, взобравшись пор. Свой маленький вскоре вдали текстами диких продолжил себя приставка строчка буквоград путь, вершину заголовок своих раз там это взобравшись пунктуация мир щеке великий все? По всей, над. Дороге, он? Заманивший пояс дорогу вопроса курсивных, ему но взгляд продолжил себя!
+                code.article-code
+            .section-blog__right-row
+            .section-blog__right-article
+                .article-header Приемы в верстке, без которых не обхолится не один сайт
+                .article-date 22 november 2016
+                .article-text Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Собрал буквоград эта рекламных моей текст вопрос своего сих рот коварных свою большого семь, последний парадигматическая снова языкового продолжил, напоивший не по всей возвращайся, точках пояс образ использовало агентство! Имени ему дороге использовало курсивных которой мир рыбного страну о продолжил алфавит прямо подпоясал, предупредила переписывается меня реторический наш, несколько lorem пустился, взобравшись пор. Свой маленький вскоре вдали текстами диких продолжил себя приставка строчка буквоград путь, вершину заголовок своих раз там это взобравшись пунктуация мир щеке великий все? По всей, над. Дороге, он? Заманивший пояс дорогу вопроса курсивных, ему но взгляд продолжил себя!
+                .article-text Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Собрал буквоград эта рекламных моей текст вопрос своего сих рот коварных свою большого семь, точках пояс образ использовало агентство! Имени ему дороге использовало курсивных которой мир рыбного страну о продолжил алфавит прямо подпоясал, предупредила переписывается меня реторический наш, несколько lorem пустился, взобравшись пор. Свой маленький вскоре вдали текстами диких продолжил себя приставка строчка буквоград путь, вершину заголовок своих раз там это взобравшись пунктуация мир щеке великий все? По всей, над. Дороге, он? Заманивший пояс дорогу вопроса курсивных, ему но взгляд продолжил себя!
+                
 
     include ../common/footer.pug
     include ../common/menu.pug

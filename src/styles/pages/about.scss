@@ -6,19 +6,21 @@
     .section-about__left {
         width: 50%;
         background: #efeee9;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .section-about__right {
         width: 50%;
         background: #eeebdf;
         display: flex;
         flex-direction: column;
+        
     }
 }
 
 .section-about__left-title {
     position: relative;
-    display: flex;
-    flex-direction: column;
     margin-bottom: 50px;
     font-size: 63px;
     .section-about__left-title_img-bg {
@@ -41,6 +43,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 445px;
         .user-description__image{
             width: 445px;
             height: 445px;
@@ -48,20 +51,38 @@
             margin-bottom: 40px;
         }
         .user-desciption__title {
-            width: 445px;
             font-size: 35px;
             margin-bottom: 40px;
-        }
-        .user-description__text {
-            width: 445px;
         }
     }
 }
 
-.block-title,
-.block-subtitle {
+.block-title {
     font-family: "BERNIER Regular", sans-serif;
     text-align: center;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 5px;
+        top: 47%;
+        left: -40px;
+        background: #000;
+        opacity: 0.3;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 5px;
+        top: 47%;
+        right: -40px;
+        background: #000;
+        opacity: 0.3;
+    }
 } 
 
 

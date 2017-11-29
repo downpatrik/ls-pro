@@ -1,0 +1,118 @@
+.index-header_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 5px;
+    padding-top: 40px;
+}
+
+.index-header__user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #455a64;
+    margin-bottom: 35px;
+
+    .user__pic { 
+        width: 144px;
+        height: 144px;
+        border-radius: 50%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        overflow: hidden;
+        .user__img{
+            width: 146px;
+            margin-top: -10px;
+        }
+    }
+    .user__description {
+        .user__name {
+            font-size: 28px;
+        }
+        .user__info {
+            font-size: 16px;
+        }
+    }
+}
+
+.index-header__socials {
+    margin-bottom: 40px;
+    .socials_green_color {
+
+    }
+    li:last-of-type {
+        margin-right: 0;
+    }
+}
+
+.index-header__menu {
+    width: 380px;
+    background: #00bfa5;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    .menu__list {
+        margin: 0;
+        padding: 0;
+        font-size: 0;
+    }
+    .menu__item {
+        display: inline-block;
+        font-size: 16px;
+        padding: 15px 31px;
+        border-right: 2px solid rgba(255, 255, 255, 0.5);
+
+        &:hover {
+            background: #009688;
+        }
+        &:last-of-type {
+            border-right: none;
+        }
+    } 
+    
+    .menu__item a {
+        text-decoration: none;
+        color: white;
+    }
+    
+}
+
+.index-header__authorization-btn {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+
+        .authorization_btn{
+            cursor: pointer;
+            border: 1px solid white;
+            border-radius: 5px;
+            background: none;
+            width: 180px;
+            height: 45px;
+            color: white;
+            font-size: 16px;
+
+            &:hover {
+                color: #00bfa5;
+                background: white;
+            }
+        }
+
+}
+
+.index-footer__copyright-text {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -218px;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: lighter;
+}
+
+.index-header__container-authorization {
+    display: none;
+}

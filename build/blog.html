@@ -7,10 +7,10 @@
     <meta content="" name="keywords">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <mate content="ie=edge" http-equiv="x-ua-compatible"></mate>
-    <link rel="stylesheet" href="/build/assets/styles/app.min.css">
+    <link rel="stylesheet" href="/assets/styles/app.min.css">
   </head>
   <body>
-    <section class="main-header">
+    <section class="main-header blog-header_hight">
       <div class="main-header__socials">
         <ul class="socials">
           <li class="socials__item"><a class="socials__item_vk" href="#"></a></li>
@@ -19,200 +19,52 @@
         </ul>
       </div>
       <div class="main-header__menu">
-        <div class="hamburger"></div>
+        <div class="hamburger" onclick="document.getElementById('hamburger__menu').style.display='block'"></div>
       </div>
-      <div class="main-header__title">
-        <div class="section-title"><img class="section-title__pic" src="/assets/images/portfolio_header.svg" alt="Портфолио"></div>
+      <div class="main-header__title blog-header_title">
+        <div class="section-title"><img class="section-title__pic" src="/assets/images/blog_header.svg" alt="Портфолио"></div>
       </div>
       <div class="main-header__user">
         <div class="user__pic"><img class="user__img" src="/assets/images/avatar.png" alt=""></div>
         <div class="user__description">
-          <div class="user__name">Гильфанов Ильнур</div>
-          <div class="user__info">Личный сайт разработчика</div>
+          <div class="block-subtitle">БЛОГ</div>
+          <div class="user__info">Статьи которые я написал</div>
         </div>
       </div>
-      <div class="main-header__scroll-btn">
+      <div class="main-header__scroll-btn blog-header_btn">
         <button class="arrow-down" type="button"></button>
       </div>
-      <div class="main-header__triangle">
+      <div class="main-header__triangle blog-header_triangle">
         <svg class="triangle" viewbox="0 0 1000 85" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <polygon class="triangle_left_white" points="0,0   0,86   500.8,86   500.8,75"></polygon>
           <polygon class="triangle_right_beige" points="1000,0   1000,86   500,86   500,75"></polygon>
         </svg>
       </div>
     </section>
-    <section class="section-about">
-      <div class="section-about__left">
-        <div class="section-about__left-title">
-          <div class="block-title">Обо мне</div>
-          <div class="section-about__left-title_img-bg"></div>
-        </div>
-        <div class="section-about__left-content">
-          <div class="user-description">
-            <div class="user-description__image"><img class="user-description__img" src="/assets/images/avatar.png" alt=""></div>
-            <div class="user-desciption__title">
-              <div class="block-subtitle">Кто я</div>
-            </div>
-            <div class="user-description__text">
-              <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.</p>
-              <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section-about__right">
-        <div class="section-about__right-title">
-          <div class="block-subtitle">Чем я могу быть вам поелезен</div>
-        </div>
-        <div class="section-about__right-description">
-          <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.</p>
-        </div>
-        <div class="section-about__right-content">
-          <ul class="skills-list">
-            <li class="slikks-list__item">
-              <div class="skills-row">
-                <div class="skills-row__title">Frontend</div>
-                <ul class="skills-row__list">
-                  <li class="skills-row__item">
-                    <div class="skill">
-                      <svg class="circles" viewbox="0 0 110 110">
-                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second circle-40" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                      </svg>
-                      <div class="skill__title">HTML5</div>
-                    </div>
-                  </li>
-                  <li class="skills-row__item">
-                    <div class="skill">
-                      <svg class="circles" viewbox="0 0 110 110">
-                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second circle-40" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                      </svg>
-                      <div class="skill__title">CSS3</div>
-                    </div>
-                  </li>
-                  <li class="skills-row__item">
-                    <div class="skill">
-                      <svg class="circles" viewbox="0 0 110 110">
-                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second circle-40" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                      </svg>
-                      <div class="skill__title">Javascript &amp; jQery</div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="slikks-list__item">
-              <div class="skills-row">
-                <div class="skills-row__title">Backend</div>
-                <ul class="skills-row__list">
-                  <li class="skills-row__item">
-                    <div class="skill">
-                      <svg class="circles" viewbox="0 0 110 110">
-                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second circle-50" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                      </svg>
-                      <div class="skill__title">PHP</div>
-                    </div>
-                  </li>
-                  <li class="skills-row__item">
-                    <div class="skill">
-                      <svg class="circles" viewbox="0 0 110 110">
-                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second circle-50" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                      </svg>
-                      <div class="skill__title">MYSQL</div>
-                    </div>
-                  </li>
-                  <li class="skills-row__item">
-                    <div class="skill">
-                      <svg class="circles" viewbox="0 0 110 110">
-                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second circle-50" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                      </svg>
-                      <div class="skill__title">Node.js &amp; npm</div>
-                    </div>
-                  </li>
-                  <li class="skills-row__item">
-                    <div class="skill">
-                      <svg class="circles" viewbox="0 0 110 110">
-                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second circle-50" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                      </svg>
-                      <div class="skill__title">Mongo.db</div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="slikks-list__item">
-              <div class="skills-row">
-                <div class="skills-row__title">Workflow</div>
-                <ul class="skills-row__list">
-                  <li class="skills-row__item">
-                    <div class="skill">
-                      <svg class="circles" viewbox="0 0 110 110">
-                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second circle-60" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                      </svg>
-                      <div class="skill__title">Git</div>
-                    </div>
-                  </li>
-                  <li class="skills-row__item">
-                    <div class="skill">
-                      <svg class="circles" viewbox="0 0 110 110">
-                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second circle-60" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                      </svg>
-                      <div class="skill__title">Gulp</div>
-                    </div>
-                  </li>
-                  <li class="skills-row__item">
-                    <div class="skill">
-                      <svg class="circles" viewbox="0 0 110 110">
-                        <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
-                        <circle class="circle__second circle-60" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
-                      </svg>
-                      <div class="skill__title">Bower</div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </li>
+    <section class="section-blog">
+      <div class="section-blog__left">
+        <div class="section-blog__left-articles">
+          <ul class="articles-list">
+            <li class="article-name active">Самое важное в SASS</li>
+            <li class="article-name">Приемы в верстке, без которых не обхолится не один сайт</li>
+            <li class="article-name">Самый необходимый набор Gulp плагинов</li>
+            <li class="article-name">Почему я выбрал Jade</li>
           </ul>
         </div>
       </div>
-    </section>
-    <section class="map">
-      <div class="map__data">             
-        <div class="contacts">
-          <div class="contacts__title">
-            <div class="block-subtitle">Контакты</div>
-          </div>
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <div class="contacts-row__item"><i class="contacts-row__icon_skype"></i>
-                <div class="contacts-row__content">skype_kdn</div>
-              </div>
-            </li>
-            <li class="contacts__item">
-              <div class="contacts-row__item"><i class="contacts-row__icon_mail"></i>
-                <div class="contacts-row__content">astahov@mail.ru</div>
-              </div>
-            </li>
-            <li class="contacts__item">
-              <div class="contacts-row__item"><i class="contacts-row__icon_phone"></i>
-                <div class="contacts-row__content">+7 123 456 78 90</div>
-              </div>
-            </li>
-            <li class="contacts__item">
-              <div class="contacts-row__item"><i class="contacts-row__icon_map"></i>
-                <div class="contacts-row__content">г. Москва, Оружейный пер., д. 15А</div>
-              </div>
-            </li>
-          </ul>
-          <div class="contacts__pin"></div>
+      <div class="section-blog__right">
+        <div class="section-blog__right-article">
+          <div class="article-header">Самое важое в SASS</div>
+          <div class="article-date">22 november 2016</div>
+          <div class="article-text">Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Собрал буквоград эта рекламных моей текст вопрос своего сих рот коварных свою большого семь, точках пояс образ использовало агентство! Имени ему дороге использовало курсивных которой мир рыбного страну о продолжил алфавит прямо подпоясал, несколько lorem пустился, взобравшись пор. Свой маленький вскоре вдали текстами диких продолжил себя приставка строчка буквоград путь, вершину заголовок своих раз там это взобравшись пунктуация мир щеке великий все? По всей, над. Дороге, он? Заманивший пояс дорогу вопроса курсивных, ему но взгляд продолжил себя!</div>
+          <div class="article-text">Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Собрал буквоград эта рекламных моей текст вопрос своего сих рот коварных свою большого семь, последний парадигматическая снова языкового продолжил, напоивший не по всей возвращайся, точках пояс образ использовало агентство! Имени ему дороге использовало курсивных которой мир рыбного страну о продолжил алфавит прямо подпоясал, предупредила переписывается меня реторический наш, несколько lorem пустился, взобравшись пор. Свой маленький вскоре вдали текстами диких продолжил себя приставка строчка буквоград путь, вершину заголовок своих раз там это взобравшись пунктуация мир щеке великий все? По всей, над. Дороге, он? Заманивший пояс дорогу вопроса курсивных, ему но взгляд продолжил себя!</div><code class="article-code"></code>
+        </div>
+        <div class="section-blog__right-row"></div>
+        <div class="section-blog__right-article">
+          <div class="article-header">Приемы в верстке, без которых не обхолится не один сайт</div>
+          <div class="article-date">22 november 2016</div>
+          <div class="article-text">Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Собрал буквоград эта рекламных моей текст вопрос своего сих рот коварных свою большого семь, последний парадигматическая снова языкового продолжил, напоивший не по всей возвращайся, точках пояс образ использовало агентство! Имени ему дороге использовало курсивных которой мир рыбного страну о продолжил алфавит прямо подпоясал, предупредила переписывается меня реторический наш, несколько lorem пустился, взобравшись пор. Свой маленький вскоре вдали текстами диких продолжил себя приставка строчка буквоград путь, вершину заголовок своих раз там это взобравшись пунктуация мир щеке великий все? По всей, над. Дороге, он? Заманивший пояс дорогу вопроса курсивных, ему но взгляд продолжил себя!</div>
+          <div class="article-text">Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Собрал буквоград эта рекламных моей текст вопрос своего сих рот коварных свою большого семь, точках пояс образ использовало агентство! Имени ему дороге использовало курсивных которой мир рыбного страну о продолжил алфавит прямо подпоясал, предупредила переписывается меня реторический наш, несколько lorem пустился, взобравшись пор. Свой маленький вскоре вдали текстами диких продолжил себя приставка строчка буквоград путь, вершину заголовок своих раз там это взобравшись пунктуация мир щеке великий все? По всей, над. Дороге, он? Заманивший пояс дорогу вопроса курсивных, ему но взгляд продолжил себя!</div>
         </div>
       </div>
     </section>
